@@ -1,0 +1,104 @@
+/* Base styles */
+:root {
+  --paper: #F7F6F3;
+  --graphite: #2A2D32;
+  --teal: #025E73;
+  --scaffold: #A7C4BF;
+  --coral: #FF5F5D;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'IBM Plex Sans', sans-serif;
+  background: var(--paper);
+  color: var(--graphite);
+  line-height: 1.6;
+}
+
+/* Typography */
+h1, h2 {
+  font-family: 'Satoshi', sans-serif;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: var(--teal);
+}
+
+h2 {
+  font-size: 2rem;
+  color: var(--teal);
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+blockquote {
+  border-left: 4px solid var(--coral);
+  margin: 1em 0;
+  padding-left: 1em;
+  font-style: italic;
+}
+
+/* HERO */
+.hero {
+  background: url('hero-bg.png') right center no-repeat;
+  background-size: cover;
+  padding: 6rem 2rem;
+  text-align: left;
+}
+
+.hero-content {
+  max-width: 650px;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  margin-bottom: 1.5em;
+}
+
+.cta-btn {
+  display: inline-block;
+  background: var(--coral);
+  color: white;
+  text-decoration: none;
+  padding: 0.75em 1.5em;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.cta-btn:hover {
+  background: transparent;
+  color: var(--coral);
+  border: 2px solid var(--coral);
+}
+
+/* Sections */
+.section {
+  padding: 4rem 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+.alt-bg {
+  background: rgba(167, 196, 191, 0.1);
+}
+
+.contact a {
+  color: var(--coral);
+}
+
+/* Footer */
+footer {
+  background: var(--graphite);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
